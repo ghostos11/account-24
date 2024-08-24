@@ -13,7 +13,8 @@ app.get('/', (req, res) => {
   </body>`)
 });
 client.on('ready', async () => {
-  console.log(${client.user.username} is ready!);
+  console.log(`${client.user.username} is ready!`);
+
 })
 //ثبات فويس 24 ساعه v13 بدون اي مشاكل
 const { joinVoiceChannel } = require('@discordjs/voice');
