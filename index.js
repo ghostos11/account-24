@@ -33,4 +33,13 @@ client.on('ready', () => {
     }).catch((error) => { return; });
     }, 1000)
 }); 
+
+var badword = ["zbi", "t7wa" , "zaml" ]; // Bad Words 
+client.on("message", message => {
+if (message.content.includes(badword)) {
+return message.reply(`**stghfirolah ! 🙄 **`);
+const vera = client.channels.cache.get(""); // Channel ID
+let embed = new Discord.MessageEmbed()
+
+  
 client.login(process.env.token);
